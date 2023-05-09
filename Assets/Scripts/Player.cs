@@ -2,22 +2,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] float speed;
-    float verticalInput;
+    [SerializeField] int speed;
     float horizontalInput;
-    Rigidbody rb;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+    float verticalInput;
 
     private void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal") * speed;
-        verticalInput = Input.GetAxis("Vertical") * speed;
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
+    }
 
-        rb.velocity = new Vector3(horizontalInput, 0, verticalInput);
-
+    private void FixedUpdate()
+    {
+        transform.Translate(new Vector3(horizontalInput, verticalInput, 0) * Time.deltaTime * speed);
     }
 }
