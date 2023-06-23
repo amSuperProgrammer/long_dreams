@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 96f63d910e97350428d273f881371666
+guid: 7059f1459924b364a9a668ea20c6757e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - buttonSpritePrefab: {fileID: 4322890482335556139, guid: a3885939d2b52604fa6fef7f9da865c9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
