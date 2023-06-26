@@ -11,7 +11,7 @@ public class LibraryPlayer : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        animator.SetFloat("Move", (Mathf.Abs(horizontalInput) + 1) * (Mathf.Abs(verticalInput) + 1));
+        animator.SetFloat("Move", Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
     }
 
     private void FixedUpdate()
