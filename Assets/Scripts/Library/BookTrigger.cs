@@ -1,41 +1,31 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BookTrigger : MonoBehaviour
 {
-    EventSystem EventSystem;
     [SerializeField] int bookNum;
     [SerializeField] GameObject buttonSpritePrefab;
     GameObject buttonSprite;
-    bool inTrigger = false;
 
-    private void Start()
+    private void OnTriggerEnter(Collider collision)
     {
-        EventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
-    }
-
-    private void Update()
-    {
-        if (inTrigger && Input.GetKey(KeyCode.E) && EventSystem.playable)
-        {
-            EventSystem.Sleep(bookNum);
-            Destroy(buttonSprite);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player" && EventSystem.playable)
+        if (collision.gameObject.name == "Player")
         {
             buttonSprite = Instantiate(buttonSpritePrefab);
             buttonSprite.transform.position = transform.position + new Vector3(0, 1.25f, -5.25f);
-            inTrigger = true;
+            if (Input.GetKey(KeyCode.E))
+                SceneManager.LoadScene(bookNum);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerStay(Collider collision)
     {
-        inTrigger = false;
-        if(EventSystem.playable)
-            Destroy(buttonSprite);
+        if (collision.gameObject.name == "Player" && Input.GetKey(KeyCode.E))
+            SceneManager.LoadScene(bookNum);
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        Destroy(buttonSprite);
     }
 }
