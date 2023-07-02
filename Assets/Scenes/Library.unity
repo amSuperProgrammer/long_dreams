@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017148524, g: 0.000000026423443, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017148548, g: 0.000000026423443, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1214,6 +1214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookNum: 1
   buttonSpritePrefab: {fileID: 4322890482335556139, guid: a3885939d2b52604fa6fef7f9da865c9, type: 3}
+  spritePos: {x: 0, y: 0, z: 0}
 --- !u!65 &699144683
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3674,7 +3675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0018587112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3682,7 +3683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.49670053
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
       propertyPath: m_LocalRotation.w
