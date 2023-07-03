@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerSkin : MonoBehaviour
 {
     float horizontalInput;
-    float direction;
+    public float direction;
 
     private void Update()
     {
