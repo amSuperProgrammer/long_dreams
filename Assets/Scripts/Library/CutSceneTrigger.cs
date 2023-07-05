@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
-public class BookTrigger : MonoBehaviour
+public class CutSceneTrigger : MonoBehaviour
 {
     [SerializeField] int bookNum;
     [SerializeField] GameObject buttonSpritePrefab;
