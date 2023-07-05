@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMove : MonoBehaviour
+public class LibraryCameraMove : MonoBehaviour
 {
     [SerializeField] List<GameObject> track;
     [SerializeField] GameObject player;
