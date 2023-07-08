@@ -10,15 +10,8 @@ public class CutSceneTrigger : MonoBehaviour
     [SerializeField] TimelineAsset timelineAsset;
     [SerializeField] PlayableDirector director;
     [SerializeField] float initialTime;
+    [SerializeField] EventSys eventSys;
     GameObject buttonSprite;
-
-    private void OnTriggerEnter(Collider collision)
-    {
-        if (collision.gameObject.name == "Player")
-        {
-
-        }
-    }
 
     private void OnTriggerStay(Collider collision)
     {
@@ -30,10 +23,16 @@ public class CutSceneTrigger : MonoBehaviour
 
         if (collision.gameObject.name == "Player" && Input.GetKey(KeyCode.E) && director.state == PlayState.Paused)
         {
-            Destroy(buttonSprite);
-            director.playableAsset = timelineAsset;
-            director.initialTime = initialTime;
-            director.Play();
+            if (bookNum != 0)
+                eventSys.bookNum = bookNum;
+
+            if (eventSys.bookNum != 0)
+            {
+                Destroy(buttonSprite);
+                director.playableAsset = timelineAsset;
+                director.initialTime = initialTime;
+                director.Play();
+            }
         }
     }
 

@@ -1240,6 +1240,7 @@ MonoBehaviour:
   timelineAsset: {fileID: 11400000, guid: 7c575175ce209144580d5381bb7b830d, type: 2}
   director: {fileID: 936701326}
   initialTime: 0
+  eventSys: {fileID: 1418191783}
 --- !u!65 &699144683
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1730,12 +1731,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7059f1459924b364a9a668ea20c6757e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookNum: 1
+  bookNum: 2
   buttonSpritePrefab: {fileID: 4322890482335556139, guid: a3885939d2b52604fa6fef7f9da865c9, type: 3}
   spritePos: {x: 0, y: 2.5, z: 0}
   timelineAsset: {fileID: 11400000, guid: 7c575175ce209144580d5381bb7b830d, type: 2}
   director: {fileID: 936701326}
   initialTime: 0
+  eventSys: {fileID: 1418191783}
 --- !u!65 &910637767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4189,6 +4191,7 @@ MonoBehaviour:
   timelineAsset: {fileID: 11400000, guid: 51ac774fbe0e47d4bae3d3e0812bf567, type: 2}
   director: {fileID: 936701326}
   initialTime: 0
+  eventSys: {fileID: 1418191783}
 --- !u!1 &1943104811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2561821543456182478, guid: 3fed82775e5d0e642adcb7ac9a45d41e, type: 3}
