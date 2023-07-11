@@ -13,7 +13,7 @@ public class SixSense : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && (director.state == PlayState.Paused || director.playableAsset == senseStay))
         {
             if (senseState == 2)
                 senseState = 0;
@@ -40,7 +40,7 @@ public class SixSense : MonoBehaviour
                 break;
 
             case 2:
-                if (director.state == PlayState.Paused && senseActivation)
+                if (director.state == PlayState.Paused && senseActivation || director.playableAsset == senseStay)
                 {
                     director.playableAsset = senseStop; 
                     senseActivation = false; 
