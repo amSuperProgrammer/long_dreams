@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2561821543456182472}
-  - component: {fileID: 2561821543456182473}
+  - component: {fileID: 121499286896201691}
   - component: {fileID: 2561821543456182475}
   - component: {fileID: 2561821543456182474}
   m_Layer: 0
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2561821543456182473
+--- !u!114 &121499286896201691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2561821543456182478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0bc0aad531d68428d9aa6f04529895, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f07fd09f62fb5e48bce4abe8cb2bb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
@@ -1389,11 +1389,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283641932864098298, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34818524
+      value: -0.32862934
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283641932864098298, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.9437737
       objectReference: {fileID: 0}
     - target: {fileID: 6283641932864098298, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.037946142
+      value: -0.03581489
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283641932864098298, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.003348081
       objectReference: {fileID: 0}
     - target: {fileID: 6287421160613323768, guid: 4e9fb5b85e25dbc4f8547a5f5090155b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1641,7 +1649,7 @@ Animator:
   m_GameObject: {fileID: 3408102106526190129}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 27f97f80a4295bd42b87b2d645bfe0c2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9be828ad950202740a74004bc2f24153, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1652,7 +1660,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2561821543087876651
+--- !u!114 &7165886522031137666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1661,7 +1669,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3408102106526190129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c51e9ccf062e64d848e747ce23c26f, type: 3}
+  m_Script: {fileID: 11500000, guid: 28026ee9e24fe194aa5afd62fdf972ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
