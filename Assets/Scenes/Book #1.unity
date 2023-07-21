@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
-  m_FogDensity: 0.01
+  m_Fog: 1
+  m_FogColor: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+  m_FogMode: 2
+  m_FogDensity: 0.031
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0.475
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -873,24 +873,22 @@ PlayableDirector:
   m_GameObject: {fileID: 632521812}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: df98a97a84718c24099476b505fdadba, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 8fb5c24e56daceb4ab8c83b9fb0c11af, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 2615776558449833965, guid: f85a476382d362646b586600d48e5f03, type: 2}
-    value: {fileID: 0}
   - key: {fileID: 8081311272835374769, guid: f85a476382d362646b586600d48e5f03, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 295316234}
   - key: {fileID: 4508502396206083402, guid: df98a97a84718c24099476b505fdadba, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 295316234}
   - key: {fileID: -3103859546364237189, guid: 8fb5c24e56daceb4ab8c83b9fb0c11af, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 295316234}
   - key: {fileID: 392560861518625968, guid: 8fb5c24e56daceb4ab8c83b9fb0c11af, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1328108795}
   - key: {fileID: -2320710342608102495, guid: 8fb5c24e56daceb4ab8c83b9fb0c11af, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 295316234}
   - key: {fileID: 2485858194111976058, guid: f85a476382d362646b586600d48e5f03, type: 2}
     value: {fileID: 169365914}
   - key: {fileID: 6684467294868138937, guid: f85a476382d362646b586600d48e5f03, type: 2}
@@ -903,6 +901,8 @@ PlayableDirector:
     value: {fileID: 425716988}
   - key: {fileID: 4801588402114213623, guid: 8fb5c24e56daceb4ab8c83b9fb0c11af, type: 2}
     value: {fileID: 351412880}
+  - key: {fileID: 8352106981534248544, guid: f85a476382d362646b586600d48e5f03, type: 2}
+    value: {fileID: 1328108795}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &632521814
@@ -993,6 +993,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2561821543456182478, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
   m_PrefabInstance: {fileID: 1356282107}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1328108795
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328108790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1356282107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1004,6 +1025,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 295316234}
+    - target: {fileID: 121499286896201691, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2561821543456182472, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1051,6 +1076,10 @@ PrefabInstance:
     - target: {fileID: 2561821543456182478, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165886522031137666, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
