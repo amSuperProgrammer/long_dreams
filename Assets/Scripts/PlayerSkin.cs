@@ -11,7 +11,8 @@ public class PlayerSkin : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        Debug.Log(new Vector3(horizontalInput + verticalInput, 0, 0).x);
+        if (new Vector3(horizontalInput + verticalInput, 0, 0).x != 0)
             direction = Mathf.Atan2(horizontalInput, verticalInput) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, direction, 0), 360 * Time.deltaTime);
