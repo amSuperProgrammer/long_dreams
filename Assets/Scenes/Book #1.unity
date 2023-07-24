@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17936996, g: 0.21914923, b: 0.27481738, a: 1}
+  m_IndirectSpecularColor: {r: 0.00747436, g: 0.0067816656, b: 0.004722741, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1077,12 +1077,170 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6859621290580628106, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6566128e-12
+      objectReference: {fileID: 0}
     - target: {fileID: 7165886522031137666, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
+--- !u!1 &1592613746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1592613748}
+  - component: {fileID: 1592613747}
+  m_Layer: 0
+  m_Name: MeshSyncServer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1592613747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592613746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab214f8029d0f54fb3a1bbe2b16de68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSessionId: -1
+  forceDeleteChildrenInNextSession: 0
+  m_assetsFolder: Assets/MeshSyncAssets
+  m_rootObject: {fileID: 1592613748}
+  m_usePhysicalCameraParams: 1
+  m_useCustomCameraMatrices: 1
+  m_materialList: []
+  m_textureList: []
+  m_audioList: []
+  m_prefabDict:
+    m_keys: []
+    m_values: []
+  m_clientObjects_keys: []
+  m_clientObjects_values: []
+  m_hostObjects_keys: 
+  m_hostObjects_values: []
+  m_objIDTable_keys: []
+  m_objIDTable_values: 
+  m_objIDSeed: 0
+  m_baseMeshSyncVersion: 1
+  m_sortEntities: 1
+  m_foldSyncSettings: 1
+  m_foldImportSettings: 1
+  m_foldMisc: 1
+  m_foldMaterialList: 1
+  m_foldAnimationTweak: 1
+  m_foldExportAssets: 1
+  m_saveAssetsInScene: 1
+  m_markMeshesDynamic: 0
+  m_needReassignMaterials: 0
+  m_keyValuesSerializationEnabled: 1
+  m_cachedDefaultMaterial: {fileID: 0}
+  m_clientInstances:
+    m_keys: []
+    m_values: []
+  m_clientInstancedEntities:
+    m_keys: []
+    m_values: []
+  instanceHandling: 0
+  numberOfPropertiesReceived: 0
+  useProBuilder: 0
+  m_autoStartServer: 1
+  m_serverPort: 8080
+  m_foldServerSettings: 1
+  m_DCCAsset: {fileID: 0}
+  m_config:
+    SyncVisibility: 1
+    SyncTransform: 1
+    SyncCameras: 1
+    SyncLights: 1
+    SyncMeshes: 1
+    m_componentSyncSettings:
+    - CanCreate: 1
+      CanUpdate: 1
+    - CanCreate: 1
+      CanUpdate: 1
+    m_usePhysicalCameraParams: 1
+    UpdateMeshColliders: 1
+    SyncMaterials: 1
+    m_importerSettings:
+      CreateMaterials: 1
+      MaterialSearchMode: 0
+      OverwriteExportedMaterials: 0
+      DefaultShader: {fileID: 0}
+      ImportTextures: 1
+    AnimationInterpolation: 0
+    KeyframeReduction: 1
+    ReductionThreshold: 0.001
+    ReductionEraseFlatCurves: 0
+    ZUpCorrection: 0
+    SyncMaterialList: 1
+    ProgressiveDisplay: 1
+    Logging: 0
+    Profiling: 0
+    m_meshSyncPlayerConfigVersion: 1
+    m_meshSyncServerConfigVersion: 1
+  m_serverVersion: 1
+  m_requestRestartServer: 0
+  m_captureScreenshotInProgress: 0
+  m_serverStarted: 0
+  m_foldInstanceSettings: 1
+  needsClientSync: 0
+  needsUserScriptCallback: 0
+  <CurrentPropertiesState>k__BackingField: 0
+--- !u!4 &1592613748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592613746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1594491335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3880334484564480072, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
+  m_PrefabInstance: {fileID: 1356282107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1594491337
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594491335}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1630288624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1501,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1401,14 +1559,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939941073}
-  m_LocalRotation: {x: -0.42293736, y: -0.11814201, z: -0.7340346, w: -0.51803446}
+  m_LocalRotation: {x: 0.8455343, y: 0.52205545, z: 0.07269028, w: -0.085123636}
   m_LocalPosition: {x: 0, y: 2.5, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 15.352, y: 50.427, z: 476.838}
+  m_LocalEulerAnglesHint: {x: 347.3, y: 178, z: 476.838}
 --- !u!1 &2107895967
 GameObject:
   m_ObjectHideFlags: 0
