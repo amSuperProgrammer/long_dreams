@@ -6300,7 +6300,7 @@ PlayableDirector:
   m_GameObject: {fileID: 632521812}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 8fb5c24e56daceb4ab8c83b9fb0c11af, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: df98a97a84718c24099476b505fdadba, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -7352,7 +7352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170700665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -727.03656, y: 10.603974, z: -0.87285614}
+  m_LocalPosition: {x: -713.03656, y: 10.603974, z: -0.87285614}
   m_LocalScale: {x: 1.8593404, y: 9.06504, z: 25.592669}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7582,6 +7582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 121499286896201691, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
+      propertyPath: sprint
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2561821543456182472, guid: 96ef36e30788dec41bb662160ca66236, type: 3}
       propertyPath: m_RootOrder
       value: 3
