@@ -12,7 +12,7 @@ public class ShadowSkin : MonoBehaviour
 
     private void Update()
     {
-        float rotateDirection = Mathf.Atan2(shadowScript.direction.x, shadowScript.direction.z) * Mathf.Rad2Deg;
+        float rotateDirection = Mathf.Atan2(shadowScript.direction.normalized.x, shadowScript.direction.normalized.z) * Mathf.Rad2Deg;
 
         animator.SetBool("Move", shadowScript.move);
 
