@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] LayerMask isGroundedLayer;
     Rigidbody rb;
+    PlayableDirector director;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        director = GameObject.Find("timeline").GetComponent<PlayableDirector>();
     }
 
     private void Update()
@@ -32,6 +35,9 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded.Length > 0)
             rb.velocity = Vector3.up * jump;
+
+        if (Input.GetKeyDown(KeyCode.E) && director.playableAsset.name == "BookTitle" && director.time < 45)
+            director.time = 45;
     }
 
     private void FixedUpdate()

@@ -8,11 +8,9 @@ public class TextController : MonoBehaviour
     TextMesh textMesh;
     int wordNum;
     int oldTextNum;
-    Vector3 startRotation;
 
     private void Start()
     {
-        startRotation = transform.rotation.eulerAngles;
         textMesh = GetComponent<TextMesh>();
         textList.Insert(0, "");
         textMesh.text = "";
@@ -21,7 +19,7 @@ public class TextController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.rotation = Quaternion.Euler(startRotation);
+        transform.rotation = Camera.main.transform.rotation;
 
         if (textNum != oldTextNum)
         {
